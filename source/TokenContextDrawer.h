@@ -44,7 +44,6 @@ void TokenTextSetLinePatternInContext(TokenLineStyle style,
 
 @interface TokenTextLine : NSObject
 @property (nonatomic, readonly) CTLineRef CTLine;
-@property (nonatomic, readonly) NSRange   stringRange;
 @property (nonatomic, readonly) CGSize    size;
 @property (nonatomic, readonly) CGPoint   position;
 @end
