@@ -163,7 +163,7 @@ static UIImage *TokenLayerDrawInContext(CGRect  bounds,
             !task.displayBlock?:task.displayBlock(context, bounds);
         });
         self.contents = (__bridge id)(image.CGImage);
-        !task.displayBlock?:task.didDisplayBlock();
+        !task.didDisplayBlock?:task.didDisplayBlock();
     }
 }
 @end
